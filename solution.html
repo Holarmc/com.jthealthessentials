@@ -16,6 +16,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -108,9 +110,9 @@
       <div class="hidden md:flex items-center space-x-8">
         <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
           href="./products.html">Products</a>
-        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
-          href="./solution.html">Solutions</a>
         <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-semibold tracking-tight"
+          href="./solution.html">Solutions</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
           href="./about.html">About</a>
         <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
           href="./contact.html">Contact</a>
@@ -122,9 +124,33 @@
         <button
           class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white font-semibold rounded-md shadow-sm scale-95 active:opacity-80 transition-transform">Request
           Quote</button>
+        <label for="mobile-menu-toggle" class="md:hidden cursor-pointer p-2 text-slate-600 hover:bg-slate-50 rounded-lg ml-2">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </label>
       </div>
     </div>
+
   </nav>
+  <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+  <!-- Mobile Menu -->
+  <label for="mobile-menu-toggle" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[90] opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition-opacity duration-300 md:hidden"></label>
+  <div class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-surface backdrop-blur-lg z-[100] shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden flex flex-col">
+     <div class="h-20 flex items-center justify-between px-6 border-b border-outline-variant/15">
+       <span class="text-xl font-bold text-blue-900 font-headline">Menu</span>
+       <label for="mobile-menu-toggle" class="cursor-pointer p-2 text-slate-600 hover:bg-slate-50 rounded-lg">
+         <span class="material-symbols-outlined text-2xl">close</span>
+       </label>
+     </div>
+     <div class="flex flex-col p-6 space-y-6 flex-1 overflow-y-auto">
+       <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold text-lg" href="./products.html">Products</a>
+       <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-semibold text-lg" href="./solution.html">Solutions</a>
+       <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold text-lg" href="./about.html">About</a>
+       <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold text-lg" href="./contact.html">Contact</a>
+       <hr class="border-outline-variant/20">
+       <a href="#" class="block text-center w-full px-5 py-3 bg-surface-container-high text-on-primary-fixed-variant font-semibold rounded-md transition-all">Online Store</a>
+       <a href="./contact.html" class="block text-center w-full px-5 py-3 bg-gradient-to-br from-primary to-primary-container text-white font-semibold rounded-md shadow-sm">Request Quote</a>
+     </div>
+  </div>
   <main class="pt-20">
     <!-- Hero Section -->
     <section class="relative h-[614px] flex items-center overflow-hidden bg-primary-container">
@@ -351,9 +377,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6 py-12">
       <div class="md:col-span-1">
         <div class="flex items-center gap-2 mb-6">
-          <img alt="J&amp;T Health Essentials Logo" class="h-10 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida/ADBb0uh8qUoN1dQcHEa5bnyG70YbFKRFs9_B43m25u8kbk2j3Jn4qWxfmC_1q5zgL7foagRclmF8kVr_J8g7LgkBtEyE30PiRJsIuYKfz0RTV5mecIMxKpQKw6jMj6FBD9GcK5-ZkfUZ-En5M1FTRHSMMKXyiEdwoUIVkO7sOI1RaVfFOiLSSH2ZQbz_ACIN16v-kh1h2rKxzpcQpG62AYX9HWguLLMmOjM4rR_KyRnit-zPfEvPdeOMUneCFYn1dBtefbkl4OqpENI2Lg" />
-          <span class="text-lg font-bold text-blue-900 dark:text-blue-100 font-headline">J&amp;T Health</span>
+          <img alt="J&amp;T Health Essentials Logo" class="h-12 w-auto object-contain" src="./favicon.svg" />
         </div>
         <p class="text-slate-500 pr-4">Precision healthcare logistics and supply chain management solutions since 2008.
         </p>
@@ -377,7 +401,10 @@
       </div>
       <div>
         <h4 class="font-bold text-blue-900 mb-4">Contact</h4>
-        <p class="text-slate-500 mb-4">info@jthealth.com<br />+1 (800) 456-HEALTH</p>
+        <div class="text-slate-500 mb-4 space-y-1 mt-[-4px]">
+          <a href="mailto:logistics@jhealth.com" class="block hover:text-blue-900">logistics@jhealth.com</a>
+          <a href="https://wa.me/+2348117464643" class="block hover:text-blue-900">+234 811 746 4643</a>
+        </div>
         <div class="flex gap-4">
           <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900"
             data-icon="language">language</span>

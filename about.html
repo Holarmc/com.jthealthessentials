@@ -1,320 +1,432 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Us | J&amp;T Health Essentials</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-primary-fixed-variant": "#24467c",
-              "on-secondary-container": "#00547d",
-              "tertiary": "#001e1a",
-              "error": "#ba1a1a",
-              "on-surface-variant": "#43474f",
-              "primary-container": "#002d62",
-              "error-container": "#ffdad6",
-              "inverse-on-surface": "#eff1f4",
-              "on-tertiary-fixed-variant": "#005048",
-              "background": "#f7f9fc",
-              "surface-container": "#eceef1",
-              "primary": "#00193c",
-              "primary-fixed-dim": "#abc7ff",
-              "on-secondary-fixed-variant": "#004b71",
-              "on-primary-container": "#7796d1",
-              "on-tertiary": "#ffffff",
-              "primary-fixed": "#d7e2ff",
-              "tertiary-container": "#00352f",
-              "outline-variant": "#c4c6d1",
-              "surface-variant": "#e0e3e6",
-              "on-primary-fixed": "#001b3f",
-              "on-surface": "#191c1e",
-              "surface-container-low": "#f2f4f7",
-              "outline": "#747781",
-              "surface-tint": "#3e5e95",
-              "secondary-fixed": "#cbe6ff",
-              "tertiary-fixed-dim": "#80d6c9",
-              "on-background": "#191c1e",
-              "surface-container-lowest": "#ffffff",
-              "inverse-surface": "#2d3133",
-              "on-tertiary-container": "#4da498",
-              "tertiary-fixed": "#9cf2e5",
-              "surface": "#f7f9fc",
-              "secondary-fixed-dim": "#8ecdff",
-              "secondary-container": "#83c8fd",
-              "surface-bright": "#f7f9fc",
-              "secondary": "#006494",
-              "on-tertiary-fixed": "#00201c",
-              "on-secondary": "#ffffff",
-              "surface-dim": "#d8dadd",
-              "on-error-container": "#93000a",
-              "on-primary": "#ffffff",
-              "on-error": "#ffffff",
-              "inverse-primary": "#abc7ff",
-              "surface-container-highest": "#e0e3e6",
-              "surface-container-high": "#e6e8eb",
-              "on-secondary-fixed": "#001e30"
-            },
-            fontFamily: {
-              "headline": ["Manrope"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About Us | J&amp;T Health Essentials</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-fixed-variant": "#24467c",
+            "on-secondary-container": "#00547d",
+            "tertiary": "#001e1a",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#43474f",
+            "primary-container": "#002d62",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#eff1f4",
+            "on-tertiary-fixed-variant": "#005048",
+            "background": "#f7f9fc",
+            "surface-container": "#eceef1",
+            "primary": "#00193c",
+            "primary-fixed-dim": "#abc7ff",
+            "on-secondary-fixed-variant": "#004b71",
+            "on-primary-container": "#7796d1",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#d7e2ff",
+            "tertiary-container": "#00352f",
+            "outline-variant": "#c4c6d1",
+            "surface-variant": "#e0e3e6",
+            "on-primary-fixed": "#001b3f",
+            "on-surface": "#191c1e",
+            "surface-container-low": "#f2f4f7",
+            "outline": "#747781",
+            "surface-tint": "#3e5e95",
+            "secondary-fixed": "#cbe6ff",
+            "tertiary-fixed-dim": "#80d6c9",
+            "on-background": "#191c1e",
+            "surface-container-lowest": "#ffffff",
+            "inverse-surface": "#2d3133",
+            "on-tertiary-container": "#4da498",
+            "tertiary-fixed": "#9cf2e5",
+            "surface": "#f7f9fc",
+            "secondary-fixed-dim": "#8ecdff",
+            "secondary-container": "#83c8fd",
+            "surface-bright": "#f7f9fc",
+            "secondary": "#006494",
+            "on-tertiary-fixed": "#00201c",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#d8dadd",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "inverse-primary": "#abc7ff",
+            "surface-container-highest": "#e0e3e6",
+            "surface-container-high": "#e6e8eb",
+            "on-secondary-fixed": "#001e30"
           },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .glass-header {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-        }
-    </style>
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    .glass-header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+    }
+  </style>
 </head>
+
 <body class="bg-background text-on-background font-body">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 glass-header shadow-sm">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
-<div class="text-xl font-bold text-blue-900 font-headline">
-<a href="index.html">
-<img alt="J&amp;T Health Essentials Logo" class="h-12 w-auto object-contain" src="./favicon.svg"/>
-</a>
-</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight" href="./products.html">Products</a>
-<a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight" href="./solution.html">Solutions</a>
-<a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-semibold tracking-tight" href="./about.html">About</a>
-<a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight" href="./contact.html">Contact</a>
-</div>
-<div class="flex items-center space-x-4">
-<button class="hidden lg:block px-5 py-2.5 bg-surface-container-high text-on-primary-fixed-variant font-semibold rounded-md transition-all duration-300 hover:bg-slate-50">Online Store</button>
-<button class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white font-semibold rounded-md shadow-sm scale-95 active:opacity-80 transition-transform">Request Quote</button>
-</div>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section: Our Story -->
-<section class="relative py-24 lg:py-32 overflow-hidden bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="z-10">
-<span class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase rounded-sm mb-6">Our Story</span>
-<h1 class="text-5xl lg:text-7xl font-headline font-bold text-primary leading-tight mb-8">Clinical Precision in Every Delivery.</h1>
-<p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">
-                        Founded on the principle of unwavering reliability, J&amp;T Health Essentials was established to bridge the gap between pharmaceutical innovation and patient accessibility. We don't just move boxes; we manage the lifelines of modern healthcare.
-                    </p>
-<div class="flex items-center gap-4">
-<div class="h-1 w-12 bg-secondary rounded-full"></div>
-<span class="text-secondary font-semibold font-label">Est. 2024 • Global Logistics Excellence</span>
-</div>
-</div>
-<div class="relative">
-<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-surface-container-highest">
-<img alt="Clinical Laboratory" class="w-full h-full object-cover grayscale-[20%] contrast-[1.1]" data-alt="Modern high-tech pharmaceutical laboratory interior with clinical white surfaces, glass equipment, and soft blue atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxaTZIT7Us3YBf1iG2d99CWT8ipQ2AJKJ3JsCsGHMDkZlsM13jaL9sY6wAhUtCtDa3BgRFKeRPAKkYAQmOlu9So_hshQTdO9zMsVHTY-DJ8gDsze0wmZKXcX1zeOeR1Nguy-rFJWzqCeHu3VOHf9gJ0ricSH-xUIG8oYrKvs-gOjQQIRKSleo28rSmjaMl4o084QNRbMdHnN3AHzy6hDEB3bCaB7UZA9h6aFiP58OYnD4AORmU5qZDTs363XFemFNx32C-rqWT8V0"/>
-</div>
-<div class="absolute -bottom-8 -left-8 p-8 bg-surface-container-lowest shadow-xl rounded-lg max-w-xs hidden md:block border border-outline-variant/15">
-<p class="text-primary font-headline font-bold text-2xl mb-2">99.9%</p>
-<p class="text-sm text-on-surface-variant">Cold-chain compliance rate across our global distribution network.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Vision and Mission: Bento Grid -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<div class="md:col-span-8 p-12 bg-primary text-white rounded-xl flex flex-col justify-between min-h-[400px]">
-<div>
-<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="biotech">biotech</span>
-<h2 class="text-4xl font-headline font-bold mb-6">Our Mission</h2>
-<p class="text-xl text-on-primary-container leading-relaxed max-w-2xl">
-                                To redefine healthcare logistics through clinical-grade precision, ensuring that life-saving treatments reach their destination with uncompromised integrity, regardless of geographical complexity.
-                            </p>
-</div>
-<div class="mt-8 pt-8 border-t border-white/10 flex items-center gap-6">
-<span class="text-sm font-label uppercase tracking-widest text-on-primary-container">Strategic Focus: Safety • Speed • Stability</span>
-</div>
-</div>
-<div class="md:col-span-4 p-12 bg-surface-container-lowest rounded-xl flex flex-col justify-between border border-outline-variant/15 shadow-sm">
-<div>
-<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="visibility">visibility</span>
-<h2 class="text-3xl font-headline font-bold text-primary mb-6">The Vision</h2>
-<p class="text-on-surface-variant leading-relaxed">
-                                To be the global standard for pharmaceutical supply chains, where technology and human expertise merge to eliminate medical scarcity.
-                            </p>
-</div>
-<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden mt-8">
-<div class="h-full bg-secondary w-3/4"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Core Values: Editorial Cards -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-6">
-<div class="mb-16 text-center">
-<h2 class="text-3xl font-headline font-bold text-primary mb-4">Foundation of Trust</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Our operations are guided by a rigorous set of values designed to protect the patient at the end of every shipment.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Value 1 -->
-<div class="group p-8 bg-surface-container-lowest rounded-lg border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
-<div class="w-12 h-12 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-4">Sterile Compliance</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">
-                            Adhering to the world's most stringent regulatory standards. Every facility is a sanctuary of clinical order and precise protocol.
-                        </p>
-</div>
-<!-- Value 2 -->
-<div class="group p-8 bg-surface-container-lowest rounded-lg border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
-<div class="w-12 h-12 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-4">Data-Driven Insight</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">
-                            Leveraging advanced telemetry to monitor temperature, humidity, and movement in real-time, 24/7/365.
-                        </p>
-</div>
-<!-- Value 3 -->
-<div class="group p-8 bg-surface-container-lowest rounded-lg border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
-<div class="w-12 h-12 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-4">Unwavering Integrity</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">
-                            Ethical stewardship is at our core. We handle every product as if it were for our own families.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Leadership Section: Precision Grid -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-<div class="max-w-xl">
-<h2 class="text-4xl font-headline font-bold text-primary mb-6">Expert Stewardship</h2>
-<p class="text-on-surface-variant">Our leadership brings together decades of experience in pharmaceutical sciences, global logistics, and medical compliance.</p>
-</div>
-<a class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
-                        View Full Directory <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Leader 1 -->
-<div class="space-y-4">
-<div class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-<img alt="CEO" class="w-full h-full object-cover" data-alt="Professional portrait of a male executive in a navy suit, clean studio background, minimalist medical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIr6FWKq8Enx76bGmie2xNv_nRAHrdfLSjxKKPqk_quRWPBYe7xZxmqo8by2VuqM6wmdrVTDi93cvzB5DwuNaqEiZHima-nkYf0_F1tVii_yH0oTEDW0zQpdev8BrjaslieNbZtA7fmYyHYRjCaKc4heJ3mE6h82vTjbAHkGa0iBJ1pKjzPmzNgZ1mZw9sKIwFJL4D6vJGOa-xohWHuJZBqtP1fQipAPTKz0tHR3Vo7Xfod33qWreOc0AxfAFnp0I1TvZNZ-Vi-gk"/>
-</div>
-<div>
-<h4 class="text-lg font-headline font-bold text-primary">Dr. Julian Thorne</h4>
-<p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">Chief Executive Officer</p>
-<p class="text-sm text-on-surface-variant">Former Logistics Director at Global Health Alliance with 20 years in cold-chain innovation.</p>
-</div>
-</div>
-<!-- Leader 2 -->
-<div class="space-y-4">
-<div class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-<img alt="COO" class="w-full h-full object-cover" data-alt="Professional portrait of a female executive with confident expression, neutral professional lighting, sleek corporate medical style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTAF8IHr2_kRGbaDAx8xBwlwsLaSvFHPaiTzOduk9CKbeyWAPP1x84urwpq3lJP7vrfK3A-niM8vvrvXSJqHqyR8h2AkA5tI6AJUad5q9l2VqFyQ84dSaVzlZqWJOxP9Yfn1wR2m-VOdI0rZiFaEqCVLyZMPXlsuzpxM9PO0p64eWqECx-InxSuYypOH1vslQAo0Tvy9R_OCo5v2fvu8AQBAlZH1ZBqMrxYYhPMVYn23c8r3X1VYPUdAnaVJsYHHHIH4x3f5xdcGc"/>
-</div>
-<div>
-<h4 class="text-lg font-headline font-bold text-primary">Elena Rodriguez</h4>
-<p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">Chief Operations Officer</p>
-<p class="text-sm text-on-surface-variant">Specializing in multi-modal transport strategies across emerging markets.</p>
-</div>
-</div>
-<!-- Leader 3 -->
-<div class="space-y-4">
-<div class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-<img alt="Compliance Officer" class="w-full h-full object-cover" data-alt="Mid-shot of a senior male professional in medical administrative setting, soft natural light, professional and approachable" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7dk0oK9zUpFwVC_znA0OHUMc9nOeQXL8C0b_oD64ifUy05iP6tqlCoC-EGPRmkYiCufsm2M2Kip8L84dPVACWhf3GAdD8itZH1Noi9aIBF0I-taMKOIBTznR2SpFhAPo3KUL9Xce3tO4ovauOjNwQ4xyFgLNB0r8JfaonW39u5Q6OBiPYIp5aMOVekIvt_czTvyN3zCOLCpr8EVecAXgSV-ITKNXeGtWx4MJ6hEwdbzpIgyDTkr6XHDYjMsRVjKMatkSG16e6WRU"/>
-</div>
-<div>
-<h4 class="text-lg font-headline font-bold text-primary">Marcus Sterling</h4>
-<p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">VP of Regulatory Compliance</p>
-<p class="text-sm text-on-surface-variant">Advisory board member for International Supply Chain Standards (ISCS).</p>
-</div>
-</div>
-<!-- Leader 4 -->
-<div class="space-y-4">
-<div class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-<img alt="CTO" class="w-full h-full object-cover" data-alt="Professional headshot of a female leader in clinical tech environment, minimalist background, crisp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbheQIQEeBpAFf6sdEIODoVoaIT1JUo2Fv1pxYZM8ER8UbuYULlO3P1r8Hp7DI-GnkZjIawPWk1fpnD9L_ScySshs8Xp6_MdlFQrbjChpb3XU34i2f92OJPqOMejqU_7joce6sZhMClMKkWE4gA-_rz4CHBRYEoIwAyahMrG19rUOJ09UvfdC5WZjY6yFkxud52OHW3YMKQyn3eeHApBmB50R3tl-1M_5Z8RM8ZFJdAZBHZ4ouoBPRXE_ELaeoltTnB1_wqEDtk_U"/>
-</div>
-<div>
-<h4 class="text-lg font-headline font-bold text-primary">Dr. Sarah Chen</h4>
-<p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">Chief Technology Officer</p>
-<p class="text-sm text-on-surface-variant">Pioneer in blockchain-based pharmaceutical tracking and IoT sensor integration.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA: Minimalist Conclusion -->
-<section class="py-24 bg-primary text-white text-center">
-<div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl font-headline font-bold mb-8">Ready to secure your supply chain?</h2>
-<p class="text-on-primary-container text-lg mb-12">Join hundreds of healthcare providers who trust J&amp;T Health Essentials for their most critical assets.</p>
-<div class="flex flex-wrap justify-center gap-6">
-<button class="px-8 py-4 bg-white text-primary font-bold rounded hover:bg-surface-container-low transition-colors">Partner with Us</button>
-<button class="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition-colors">Download Capability Statement</button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full border-t border-slate-200 bg-slate-50 font-body text-sm leading-relaxed">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6 py-12">
-<div class="col-span-1 md:col-span-1">
-<div class="text-lg font-bold text-blue-900 mb-6"><img alt="J&amp;T Health Essentials Logo" class="h-12 w-auto object-contain mb-6" src="https://lh3.googleusercontent.com/aida/ADBb0uh8qUoN1dQcHEa5bnyG70YbFKRFs9_B43m25u8kbk2j3Jn4qWxfmC_1q5zgL7foagRclmF8kVr_J8g7LgkBtEyE30PiRJsIuYKfz0RTV5mecIMxKpQKw6jMj6FBD9GcK5-ZkfUZ-En5M1FTRHSMMKXyiEdwoUIVkO7sOI1RaVfFOiLSSH2ZQbz_ACIN16v-kh1h2rKxzpcQpG62AYX9HWguLLMmOjM4rR_KyRnit-zPfEvPdeOMUneCFYn1dBtefbkl4OqpENI2Lg"/></div>
-<p class="text-slate-500 max-w-xs">Pioneering precision in global healthcare logistics. Delivering hope, one shipment at a time.</p>
-</div>
-<div>
-<h5 class="font-bold text-blue-900 mb-6 uppercase tracking-wider text-xs">Navigation</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">About J&amp;T</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Executive Team</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Global Network</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Contact Support</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold text-blue-900 mb-6 uppercase tracking-wider text-xs">Compliance</h5>
-<ul class="space-y-4">
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Supply Chain Standards</a></li>
-<li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Global Logistics</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-bold text-blue-900 mb-6 uppercase tracking-wider text-xs">Headquarters</h5>
-<p class="text-slate-500 mb-4">
-                    102 Clinical Plaza<br/>
-                    Logistic District, NC 28202<br/>
-                    United States
-                </p>
-<div class="flex space-x-4">
-<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900" data-icon="public">public</span>
-<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900" data-icon="share">share</span>
-<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900" data-icon="mail">mail</span>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-6 py-8 border-t border-slate-200/60">
-<p class="text-slate-500 text-xs text-center md:text-left">© 2024 J&amp;T Health Essentials Limited. All rights reserved.</p>
-</div>
-</footer>
-</body></html>
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 glass-header shadow-sm">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <div class="text-xl font-bold text-blue-900 font-headline">
+        <a href="index.html">
+          <img alt="J&amp;T Health Essentials Logo" class="h-12 w-auto object-contain" src="./favicon.svg" />
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
+          href="./products.html">Products</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
+          href="./solution.html">Solutions</a>
+        <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-semibold tracking-tight"
+          href="./about.html">About</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
+          href="./contact.html">Contact</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button
+          class="hidden lg:block px-5 py-2.5 bg-surface-container-high text-on-primary-fixed-variant font-semibold rounded-md transition-all duration-300 hover:bg-slate-50">Online
+          Store</button>
+        <button
+          class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white font-semibold rounded-md shadow-sm scale-95 active:opacity-80 transition-transform">Request
+          Quote</button>
+        <label for="mobile-menu-toggle"
+          class="md:hidden cursor-pointer p-2 text-slate-600 hover:bg-slate-50 rounded-lg ml-2">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </label>
+      </div>
+    </div>
+
+  </nav>
+  <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+  <!-- Mobile Menu -->
+  <label for="mobile-menu-toggle"
+    class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[90] opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition-opacity duration-300 md:hidden"></label>
+  <div
+    class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-surface backdrop-blur-lg z-[100] shadow-2xl transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden flex flex-col">
+    <div class="h-20 flex items-center justify-between px-6 border-b border-outline-variant/15">
+      <span class="text-xl font-bold text-blue-900 font-headline">Menu</span>
+      <label for="mobile-menu-toggle" class="cursor-pointer p-2 text-slate-600 hover:bg-slate-50 rounded-lg">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </label>
+    </div>
+    <div class="flex flex-col p-6 space-y-6 flex-1 overflow-y-auto">
+      <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold text-lg"
+        href="./products.html">Products</a>
+      <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold text-lg"
+        href="./solution.html">Solutions</a>
+      <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-semibold text-lg"
+        href="./about.html">About</a>
+      <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold text-lg"
+        href="./contact.html">Contact</a>
+      <hr class="border-outline-variant/20">
+      <a href="#"
+        class="block text-center w-full px-5 py-3 bg-surface-container-high text-on-primary-fixed-variant font-semibold rounded-md transition-all">Online
+        Store</a>
+      <a href="./contact.html"
+        class="block text-center w-full px-5 py-3 bg-gradient-to-br from-primary to-primary-container text-white font-semibold rounded-md shadow-sm">Request
+        Quote</a>
+    </div>
+  </div>
+  <main class="pt-20">
+    <!-- Hero Section: Our Story -->
+    <section class="relative py-24 lg:py-32 overflow-hidden bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="z-10">
+          <span
+            class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase rounded-sm mb-6">Our
+            Story</span>
+          <h1 class="text-5xl lg:text-7xl font-headline font-bold text-primary leading-tight mb-8">Clinical Precision in
+            Every Delivery.</h1>
+          <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">
+            Founded on the principle of unwavering reliability, J&amp;T Health Essentials was established to bridge the
+            gap between pharmaceutical innovation and patient accessibility. We don't just move boxes; we manage the
+            lifelines of modern healthcare.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="h-1 w-12 bg-secondary rounded-full"></div>
+            <span class="text-secondary font-semibold font-label">Est. 2024 • Global Logistics Excellence</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-surface-container-highest">
+            <img alt="Clinical Laboratory" class="w-full h-full object-cover grayscale-[20%] contrast-[1.1]"
+              data-alt="Modern high-tech pharmaceutical laboratory interior with clinical white surfaces, glass equipment, and soft blue atmospheric lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxaTZIT7Us3YBf1iG2d99CWT8ipQ2AJKJ3JsCsGHMDkZlsM13jaL9sY6wAhUtCtDa3BgRFKeRPAKkYAQmOlu9So_hshQTdO9zMsVHTY-DJ8gDsze0wmZKXcX1zeOeR1Nguy-rFJWzqCeHu3VOHf9gJ0ricSH-xUIG8oYrKvs-gOjQQIRKSleo28rSmjaMl4o084QNRbMdHnN3AHzy6hDEB3bCaB7UZA9h6aFiP58OYnD4AORmU5qZDTs363XFemFNx32C-rqWT8V0" />
+          </div>
+          <div
+            class="absolute -bottom-8 -left-8 p-8 bg-surface-container-lowest shadow-xl rounded-lg max-w-xs hidden md:block border border-outline-variant/15">
+            <p class="text-primary font-headline font-bold text-2xl mb-2">99.9%</p>
+            <p class="text-sm text-on-surface-variant">Cold-chain compliance rate across our global distribution
+              network.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vision and Mission: Bento Grid -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <div class="md:col-span-8 p-12 bg-primary text-white rounded-xl flex flex-col justify-between min-h-[400px]">
+            <div>
+              <span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6"
+                data-icon="biotech">biotech</span>
+              <h2 class="text-4xl font-headline font-bold mb-6">Our Mission</h2>
+              <p class="text-xl text-on-primary-container leading-relaxed max-w-2xl">
+                To redefine healthcare logistics through clinical-grade precision, ensuring that life-saving treatments
+                reach their destination with uncompromised integrity, regardless of geographical complexity.
+              </p>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/10 flex items-center gap-6">
+              <span class="text-sm font-label uppercase tracking-widest text-on-primary-container">Strategic Focus:
+                Safety • Speed • Stability</span>
+            </div>
+          </div>
+          <div
+            class="md:col-span-4 p-12 bg-surface-container-lowest rounded-xl flex flex-col justify-between border border-outline-variant/15 shadow-sm">
+            <div>
+              <span class="material-symbols-outlined text-4xl text-secondary mb-6"
+                data-icon="visibility">visibility</span>
+              <h2 class="text-3xl font-headline font-bold text-primary mb-6">The Vision</h2>
+              <p class="text-on-surface-variant leading-relaxed">
+                To be the global standard for pharmaceutical supply chains, where technology and human expertise merge
+                to eliminate medical scarcity.
+              </p>
+            </div>
+            <div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden mt-8">
+              <div class="h-full bg-secondary w-3/4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Core Values: Editorial Cards -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 text-center">
+          <h2 class="text-3xl font-headline font-bold text-primary mb-4">Foundation of Trust</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">Our operations are guided by a rigorous set of values
+            designed to protect the patient at the end of every shipment.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Value 1 -->
+          <div
+            class="group p-8 bg-surface-container-lowest rounded-lg border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold text-primary mb-4">Sterile Compliance</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Adhering to the world's most stringent regulatory standards. Every facility is a sanctuary of clinical
+              order and precise protocol.
+            </p>
+          </div>
+          <!-- Value 2 -->
+          <div
+            class="group p-8 bg-surface-container-lowest rounded-lg border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold text-primary mb-4">Data-Driven Insight</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Leveraging advanced telemetry to monitor temperature, humidity, and movement in real-time, 24/7/365.
+            </p>
+          </div>
+          <!-- Value 3 -->
+          <div
+            class="group p-8 bg-surface-container-lowest rounded-lg border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-md bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold text-primary mb-4">Unwavering Integrity</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Ethical stewardship is at our core. We handle every product as if it were for our own families.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Leadership Section: Precision Grid -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+          <div class="max-w-xl">
+            <h2 class="text-4xl font-headline font-bold text-primary mb-6">Expert Stewardship</h2>
+            <p class="text-on-surface-variant">Our leadership brings together decades of experience in pharmaceutical
+              sciences, global logistics, and medical compliance.</p>
+          </div>
+          <a class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+            View Full Directory <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Leader 1 -->
+          <div class="space-y-4">
+            <div
+              class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <img alt="CEO" class="w-full h-full object-cover"
+                data-alt="Professional portrait of a male executive in a navy suit, clean studio background, minimalist medical aesthetic"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIr6FWKq8Enx76bGmie2xNv_nRAHrdfLSjxKKPqk_quRWPBYe7xZxmqo8by2VuqM6wmdrVTDi93cvzB5DwuNaqEiZHima-nkYf0_F1tVii_yH0oTEDW0zQpdev8BrjaslieNbZtA7fmYyHYRjCaKc4heJ3mE6h82vTjbAHkGa0iBJ1pKjzPmzNgZ1mZw9sKIwFJL4D6vJGOa-xohWHuJZBqtP1fQipAPTKz0tHR3Vo7Xfod33qWreOc0AxfAFnp0I1TvZNZ-Vi-gk" />
+            </div>
+            <div>
+              <h4 class="text-lg font-headline font-bold text-primary">Dr. Julian Thorne</h4>
+              <p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">Chief Executive Officer</p>
+              <p class="text-sm text-on-surface-variant">Former Logistics Director at Global Health Alliance with 20
+                years in cold-chain innovation.</p>
+            </div>
+          </div>
+          <!-- Leader 2 -->
+          <div class="space-y-4">
+            <div
+              class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <img alt="COO" class="w-full h-full object-cover"
+                data-alt="Professional portrait of a female executive with confident expression, neutral professional lighting, sleek corporate medical style"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTAF8IHr2_kRGbaDAx8xBwlwsLaSvFHPaiTzOduk9CKbeyWAPP1x84urwpq3lJP7vrfK3A-niM8vvrvXSJqHqyR8h2AkA5tI6AJUad5q9l2VqFyQ84dSaVzlZqWJOxP9Yfn1wR2m-VOdI0rZiFaEqCVLyZMPXlsuzpxM9PO0p64eWqECx-InxSuYypOH1vslQAo0Tvy9R_OCo5v2fvu8AQBAlZH1ZBqMrxYYhPMVYn23c8r3X1VYPUdAnaVJsYHHHIH4x3f5xdcGc" />
+            </div>
+            <div>
+              <h4 class="text-lg font-headline font-bold text-primary">Elena Rodriguez</h4>
+              <p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">Chief Operations Officer</p>
+              <p class="text-sm text-on-surface-variant">Specializing in multi-modal transport strategies across
+                emerging markets.</p>
+            </div>
+          </div>
+          <!-- Leader 3 -->
+          <div class="space-y-4">
+            <div
+              class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <img alt="Compliance Officer" class="w-full h-full object-cover"
+                data-alt="Mid-shot of a senior male professional in medical administrative setting, soft natural light, professional and approachable"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7dk0oK9zUpFwVC_znA0OHUMc9nOeQXL8C0b_oD64ifUy05iP6tqlCoC-EGPRmkYiCufsm2M2Kip8L84dPVACWhf3GAdD8itZH1Noi9aIBF0I-taMKOIBTznR2SpFhAPo3KUL9Xce3tO4ovauOjNwQ4xyFgLNB0r8JfaonW39u5Q6OBiPYIp5aMOVekIvt_czTvyN3zCOLCpr8EVecAXgSV-ITKNXeGtWx4MJ6hEwdbzpIgyDTkr6XHDYjMsRVjKMatkSG16e6WRU" />
+            </div>
+            <div>
+              <h4 class="text-lg font-headline font-bold text-primary">Marcus Sterling</h4>
+              <p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">VP of Regulatory Compliance</p>
+              <p class="text-sm text-on-surface-variant">Advisory board member for International Supply Chain Standards
+                (ISCS).</p>
+            </div>
+          </div>
+          <!-- Leader 4 -->
+          <div class="space-y-4">
+            <div
+              class="aspect-[3/4] rounded-lg bg-surface-container-high overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <img alt="CTO" class="w-full h-full object-cover"
+                data-alt="Professional headshot of a female leader in clinical tech environment, minimalist background, crisp lighting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbheQIQEeBpAFf6sdEIODoVoaIT1JUo2Fv1pxYZM8ER8UbuYULlO3P1r8Hp7DI-GnkZjIawPWk1fpnD9L_ScySshs8Xp6_MdlFQrbjChpb3XU34i2f92OJPqOMejqU_7joce6sZhMClMKkWE4gA-_rz4CHBRYEoIwAyahMrG19rUOJ09UvfdC5WZjY6yFkxud52OHW3YMKQyn3eeHApBmB50R3tl-1M_5Z8RM8ZFJdAZBHZ4ouoBPRXE_ELaeoltTnB1_wqEDtk_U" />
+            </div>
+            <div>
+              <h4 class="text-lg font-headline font-bold text-primary">Dr. Sarah Chen</h4>
+              <p class="text-secondary text-xs font-label uppercase tracking-wider mb-2">Chief Technology Officer</p>
+              <p class="text-sm text-on-surface-variant">Pioneer in blockchain-based pharmaceutical tracking and IoT
+                sensor integration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA: Minimalist Conclusion -->
+    <section class="py-24 bg-primary text-white text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-headline font-bold mb-8">Ready to secure your supply chain?</h2>
+        <p class="text-on-primary-container text-lg mb-12">Join hundreds of healthcare providers who trust J&amp;T
+          Health Essentials for their most critical assets.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <button
+            class="px-8 py-4 bg-white text-primary font-bold rounded hover:bg-surface-container-low transition-colors">Partner
+            with Us</button>
+          <button
+            class="px-8 py-4 border border-white/20 text-white font-bold rounded hover:bg-white/10 transition-colors">Download
+            Capability Statement</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full border-t border-slate-200 bg-slate-50 font-body text-sm leading-relaxed">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6 py-12">
+      <div class="col-span-1 md:col-span-1">
+        <div class="text-lg font-bold text-blue-900 mb-6"><img alt="J&amp;T Health Essentials Logo"
+            class="h-12 w-auto object-contain mb-6"
+            src="https://lh3.googleusercontent.com/aida/ADBb0uh8qUoN1dQcHEa5bnyG70YbFKRFs9_B43m25u8kbk2j3Jn4qWxfmC_1q5zgL7foagRclmF8kVr_J8g7LgkBtEyE30PiRJsIuYKfz0RTV5mecIMxKpQKw6jMj6FBD9GcK5-ZkfUZ-En5M1FTRHSMMKXyiEdwoUIVkO7sOI1RaVfFOiLSSH2ZQbz_ACIN16v-kh1h2rKxzpcQpG62AYX9HWguLLMmOjM4rR_KyRnit-zPfEvPdeOMUneCFYn1dBtefbkl4OqpENI2Lg" />
+        </div>
+        <p class="text-slate-500 max-w-xs">Pioneering precision in global healthcare logistics. Delivering hope, one
+          shipment at a time.</p>
+      </div>
+      <div>
+        <h5 class="font-bold text-blue-900 mb-6 uppercase tracking-wider text-xs">Navigation</h5>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">About J&amp;T</a></li>
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Executive Team</a></li>
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Global Network</a></li>
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-blue-900 mb-6 uppercase tracking-wider text-xs">Compliance</h5>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Supply Chain Standards</a></li>
+          <li><a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Global Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-blue-900 mb-6 uppercase tracking-wider text-xs">Headquarters</h5>
+        <p class="text-slate-500 mb-4">
+          102 Clinical Plaza<br />
+          Logistic District, NC 28202<br />
+          United States
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://jhealthessentials.com"
+            class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900"
+            data-icon="public">public</a>
+          <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900"
+            data-icon="share">share</span>
+          <a href="mailto:logistics@jhealth.com"
+            class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-900"
+            data-icon="mail">mail</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-8 border-t border-slate-200/60">
+      <p class="text-slate-500 text-xs text-center md:text-left">© 2024 J&amp;T Health Essentials Limited. All rights
+        reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
