@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-container": "#4da498",
+            "on-secondary-fixed": "#001e30",
+            "on-primary-container": "#7796d1",
+            "background": "#f7f9fc",
+            "tertiary-container": "#00352f",
+            "outline-variant": "#c4c6d1",
+            "error-container": "#ffdad6",
+            "on-background": "#191c1e",
+            "tertiary": "#001e1a",
+            "surface-container-low": "#f2f4f7",
+            "on-secondary-container": "#00547d",
+            "surface-tint": "#3e5e95",
+            "primary": "#00193c",
+            "secondary": "#006494",
+            "surface": "#f7f9fc",
+            "on-secondary": "#ffffff",
+            "on-surface": "#191c1e",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#00201c",
+            "secondary-fixed": "#cbe6ff",
+            "on-primary-fixed": "#001b3f",
+            "tertiary-fixed": "#9cf2e5",
+            "inverse-primary": "#abc7ff",
+            "outline": "#747781",
+            "secondary-container": "#83c8fd",
+            "surface-container": "#eceef1",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#004b71",
+            "on-surface-variant": "#43474f",
+            "surface-container-highest": "#e0e3e6",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#8ecdff",
+            "on-tertiary-fixed-variant": "#005048",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#abc7ff",
+            "surface-variant": "#e0e3e6",
+            "on-error": "#ffffff",
+            "primary-container": "#002d62",
+            "surface-container-high": "#e6e8eb",
+            "surface-dim": "#d8dadd",
+            "inverse-surface": "#2d3133",
+            "tertiary-fixed-dim": "#80d6c9",
+            "on-primary-fixed-variant": "#24467c",
+            "inverse-on-surface": "#eff1f4",
+            "surface-bright": "#f7f9fc",
+            "primary-fixed": "#d7e2ff"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-secondary-container">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 glass-header shadow-sm">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <div class="text-xl font-bold text-blue-900 font-headline">
+        <a href="index.html">
+          <img alt="J&amp;T Health Essentials Logo" class="h-12 w-auto object-contain" src="./favicon.svg" />
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
+          href="./products.html">Products</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
+          href="./solution.html">Solutions</a>
+        <a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-headline font-semibold tracking-tight"
+          href="./about.html">About</a>
+        <a class="text-slate-600 hover:text-blue-900 transition-colors font-headline font-semibold tracking-tight"
+          href="./contact.html">Contact</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button
+          class="hidden lg:block px-5 py-2.5 bg-surface-container-high text-on-primary-fixed-variant font-semibold rounded-md transition-all duration-300 hover:bg-slate-50">Online
+          Store</button>
+        <button
+          class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white font-semibold rounded-md shadow-sm scale-95 active:opacity-80 transition-transform">Request
+          Quote</button>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+    <!-- Hero Section / Context -->
+    <header class="mb-16">
+      <h1 class="font-headline text-5xl font-bold text-primary tracking-tight mb-4">Connect with Global Health Logistics
+      </h1>
+      <p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">
+        Ensuring pharmaceutical integrity from origin to patient. Reach out to our clinical logistics team for supply
+        inquiries and institutional partnerships.
+      </p>
+    </header>
+    <!-- Main Content Layout: Bento Grid Style -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <!-- Left Column: Contact Details & Map -->
+      <div class="lg:col-span-5 flex flex-col gap-8">
+        <!-- Contact Details Grid -->
+        <div class="grid grid-cols-1 gap-4">
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 flex items-start gap-5">
+            <div
+              class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined">call</span>
+            </div>
+            <div>
+              <p class="text-label-md font-bold text-secondary uppercase tracking-widest text-[10px] mb-1">Direct Line
+              </p>
+              <p class="text-xl font-semibold text-primary font-headline">+1 (800) 555-0192</p>
+              <p class="text-sm text-on-surface-variant mt-1">Mon-Fri, 9am - 6pm EST</p>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 flex items-start gap-5">
+            <div
+              class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+              <p class="text-label-md font-bold text-secondary uppercase tracking-widest text-[10px] mb-1">Inquiries</p>
+              <p class="text-xl font-semibold text-primary font-headline">logistics@jthealth.com</p>
+              <p class="text-sm text-on-surface-variant mt-1">Guaranteed 24h clinical response</p>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 flex items-start gap-5">
+            <div
+              class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div>
+              <p class="text-label-md font-bold text-secondary uppercase tracking-widest text-[10px] mb-1">Global
+                Headquarters</p>
+              <p class="text-xl font-semibold text-primary font-headline leading-snug">Suite 400, Medical Plaza<br />New
+                York, NY 10016</p>
+            </div>
+          </div>
+        </div>
+        <!-- Interactive Map Placeholder -->
+        <div class="h-80 w-full rounded-xl overflow-hidden relative group bg-surface-container shadow-sm">
+          <img alt="Business Location Map" class="w-full h-full object-cover filter contrast-75 brightness-110"
+            data-alt="clean minimal stylized map of New York City in light blue and grey tones with a single prominent navy location marker"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiIioRhMUqqKJCXoABu4Q_LBLnBcxld7wOqWOosUaIDrUHJu6ZSQ4Z4TSRbMp6aE7X_NYABI6qeZsDuGMCotv7SCp1VneEMkuRygoRue05SnMGSsvZUVvjuBH5VIzyrHC_IwvQEb5yI78E-e4bxCc6SiuIJK8Q2tfAiAp4WZgdPC4DoFSXk1pREo6IvJNSEKL7XZodt8fq4h6ujPPe6nngFzY0p7HHfzHVPa6G367TLZb2C6j-VAmOVFIVdj4RVrPX-7iI6DFEEQ8" />
+          <div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-500"></div>
+          <div class="absolute bottom-6 right-6">
+            <div class="bg-white px-4 py-2 rounded-lg shadow-xl flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              <span class="text-xs font-bold text-primary font-headline">LIVE HUB STATUS</span>
+            </div>
+          </div>
+          <div class="hidden" data-location="New York City"></div>
+        </div>
+      </div>
+      <!-- Right Column: Supply Request Form -->
+      <div class="lg:col-span-7">
+        <div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/15 h-full">
+          <div class="mb-10">
+            <h2 class="font-headline text-2xl font-bold text-primary mb-2">Supply Request Form</h2>
+            <p class="text-on-surface-variant">Submit your institutional requirements for priority fulfillment.</p>
+          </div>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-on-surface-variant tracking-wider uppercase">Full Name</label>
+                <input
+                  class="w-full bg-surface-container-lowest border border-outline-variant/15 rounded-md px-4 py-3 focus:ring-2 focus:ring-primary-fixed focus:border-primary outline-none transition-all placeholder:text-outline/50"
+                  placeholder="John Doe" type="text" />
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-on-surface-variant tracking-wider uppercase">Institution</label>
+                <input
+                  class="w-full bg-surface-container-lowest border border-outline-variant/15 rounded-md px-4 py-3 focus:ring-2 focus:ring-primary-fixed focus:border-primary outline-none transition-all placeholder:text-outline/50"
+                  placeholder="General Medical Center" type="text" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-on-surface-variant tracking-wider uppercase">Email Address</label>
+                <input
+                  class="w-full bg-surface-container-lowest border border-outline-variant/15 rounded-md px-4 py-3 focus:ring-2 focus:ring-primary-fixed focus:border-primary outline-none transition-all placeholder:text-outline/50"
+                  placeholder="j.doe@hospital.org" type="email" />
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-on-surface-variant tracking-wider uppercase">Phone Number</label>
+                <input
+                  class="w-full bg-surface-container-lowest border border-outline-variant/15 rounded-md px-4 py-3 focus:ring-2 focus:ring-primary-fixed focus:border-primary outline-none transition-all placeholder:text-outline/50"
+                  placeholder="+1 (000) 000-0000" type="tel" />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-on-surface-variant tracking-wider uppercase">Product Category</label>
+              <select
+                class="w-full bg-surface-container-lowest border border-outline-variant/15 rounded-md px-4 py-3 focus:ring-2 focus:ring-primary-fixed focus:border-primary outline-none transition-all appearance-none cursor-pointer">
+                <option>Select a category</option>
+                <option>Pharmaceuticals</option>
+                <option>Cold-Chain Biologics</option>
+                <option>Surgical Equipment</option>
+                <option>Diagnostic Kits</option>
+              </select>
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-on-surface-variant tracking-wider uppercase">Institutional
+                Message</label>
+              <textarea
+                class="w-full bg-surface-container-lowest border border-outline-variant/15 rounded-md px-4 py-3 focus:ring-2 focus:ring-primary-fixed focus:border-primary outline-none transition-all placeholder:text-outline/50 resize-none"
+                placeholder="Describe your specific logistical or supply needs..." rows="5"></textarea>
+            </div>
+            <div class="pt-4">
+              <button
+                class="w-full md:w-auto px-10 py-4 bg-gradient-to-br from-primary to-primary-container text-white font-bold rounded-md hover:shadow-lg transition-all flex items-center justify-center gap-3 active:scale-95"
+                type="submit">
+                Send Supply Request
+                <span class="material-symbols-outlined text-sm">send</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Trust Section / Certificates -->
+    <section class="mt-20 py-16 border-t border-outline-variant/15">
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+        <div class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-4xl">verified_user</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase">GDP Certified</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-4xl">thermostat</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase">Cold-Chain Validated</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-4xl">inventory_2</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase">ISO 13485:2016</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <span class="material-symbols-outlined text-4xl">public</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase">Global Network</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6 py-12">
+      <div class="md:col-span-1">
+        <div class="text-lg font-bold text-blue-900 dark:text-blue-100 font-headline mb-4"><img
+            alt="J&amp;T Health Essentials Logo" class="h-10 w-auto object-contain mb-4"
+            src="https://lh3.googleusercontent.com/aida/ADBb0uh8qUoN1dQcHEa5bnyG70YbFKRFs9_B43m25u8kbk2j3Jn4qWxfmC_1q5zgL7foagRclmF8kVr_J8g7LgkBtEyE30PiRJsIuYKfz0RTV5mecIMxKpQKw6jMj6FBD9GcK5-ZkfUZ-En5M1FTRHSMMKXyiEdwoUIVkO7sOI1RaVfFOiLSSH2ZQbz_ACIN16v-kh1h2rKxzpcQpG62AYX9HWguLLMmOjM4rR_KyRnit-zPfEvPdeOMUneCFYn1dBtefbkl4OqpENI2Lg" />
+        </div>
+        <p class="text-slate-500 dark:text-slate-400 text-sm font-body leading-relaxed">Precision logistics for the
+          pharmaceutical and healthcare sectors. Trusted global delivery systems.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Legal</h4>
+        <a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="#">Privacy Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="#">Terms of Service</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Compliance</h4>
+        <a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="#">Supply Chain Standards</a>
+        <a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="#">Global Logistics</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-2">Connect</h4>
+        <div class="flex gap-4">
+          <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+            href="#">
+            <span class="material-symbols-outlined text-lg">share</span>
+          </a>
+          <a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+            href="#">
+            <span class="material-symbols-outlined text-lg">forum</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-6 py-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500 dark:text-slate-400 text-xs font-body">© 2024 J&amp;T Health Essentials Limited. All
+        rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <span class="text-xs text-slate-400">Security Encrypted</span>
+        <span class="text-xs text-slate-400">GDPR Compliant</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

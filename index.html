@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>J&amp;T Health Essentials | Reliable Healthcare Products</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-container": "#4da498",
+            "on-secondary-fixed": "#001e30",
+            "on-primary-container": "#7796d1",
+            "background": "#f7f9fc",
+            "tertiary-container": "#00352f",
+            "outline-variant": "#c4c6d1",
+            "error-container": "#ffdad6",
+            "on-background": "#191c1e",
+            "tertiary": "#001e1a",
+            "surface-container-low": "#f2f4f7",
+            "on-secondary-container": "#00547d",
+            "surface-tint": "#3e5e95",
+            "primary": "#00193c",
+            "secondary": "#006494",
+            "surface": "#f7f9fc",
+            "on-secondary": "#ffffff",
+            "on-surface": "#191c1e",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#00201c",
+            "secondary-fixed": "#cbe6ff",
+            "on-primary-fixed": "#001b3f",
+            "tertiary-fixed": "#9cf2e5",
+            "inverse-primary": "#abc7ff",
+            "outline": "#747781",
+            "secondary-container": "#83c8fd",
+            "surface-container": "#eceef1",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#004b71",
+            "on-surface-variant": "#43474f",
+            "surface-container-highest": "#e0e3e6",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#8ecdff",
+            "on-tertiary-fixed-variant": "#005048",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#abc7ff",
+            "surface-variant": "#e0e3e6",
+            "on-error": "#ffffff",
+            "primary-container": "#002d62",
+            "surface-container-high": "#e6e8eb",
+            "surface-dim": "#d8dadd",
+            "inverse-surface": "#2d3133",
+            "tertiary-fixed-dim": "#80d6c9",
+            "on-primary-fixed-variant": "#24467c",
+            "inverse-on-surface": "#eff1f4",
+            "surface-bright": "#f7f9fc",
+            "primary-fixed": "#d7e2ff"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #00193c 0%, #006494 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-primary">
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <div class="flex items-center gap-3">
+        <a href="index.html">
+          <img alt="J&amp;T Health Essentials Logo" class="h-12 w-auto object-contain" src="./favicon.svg" />
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-700 dark:border-blue-300 pb-1 font-headline font-semibold tracking-tight"
+          href="./products.html">Products</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-headline font-semibold tracking-tight"
+          href="./solution.html">Solutions</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-headline font-semibold tracking-tight"
+          href="./about.html">About</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors font-headline font-semibold tracking-tight"
+          href="./contact.html">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="hidden lg:block px-5 py-2 text-sm font-semibold text-on-secondary-fixed-variant hover:bg-slate-50 transition-all rounded-md">Online
+          Store</button>
+        <button
+          class="px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-md hover:opacity-90 transition-transform active:scale-95 shadow-lg shadow-primary/10">Request
+          Quote</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 overflow-hidden bg-surface">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-2xl">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label text-xs tracking-widest uppercase mb-6">Pharmacy-Led
+            Healthcare Company</span>
+          <h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-primary leading-[1.1] mb-8 tracking-tight">
+            Quality medical <span class="text-gradient">products and supply
+              services</span> for all your needs.
+          </h1>
+          <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+            A Pharmacy-Led company providing quality medical products and supply services to hospitals, pharmacies,
+            organizations and individuals
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button onclick="window.location.href='./products.html'"
+              class="px-8 py-4 bg-primary text-white font-bold rounded-md flex items-center gap-2 hover:shadow-xl transition-all">
+              Explore Products
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </button>
+            <button onclick="window.location.href='./solution.html'"
+              class="px-8 py-4 bg-surface-container-high text-on-primary-fixed-variant font-bold rounded-md hover:bg-surface-container-highest transition-all">
+              Our Solutions
+            </button>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative group">
+            <img class="w-full h-full object-cover"
+              data-alt="clean high-end pharmaceutical laboratory setting with organized medical glass vials and modern diagnostic equipment in soft blue lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3MtK3m-MB6i4a5f6-xwMoRqPEo1WVXS_zyFrv6PlctDt4GLJ3mWSakyQMe0aM1nplJ4UXiTpAnSs7k2ZsYZvyqo5Wj_Uen5MHVbtwzQKa3AaasK4LiCXAeLQX6IXUsjiPU5-SBk0DhveefvFBx4LJofW0lS1vEwQvXgl15wP3I6Sbv8ZtCYxeWntSyUse74v0wmYAeVjym3w6Sdotf-4oKUMnkTcOn3zrtyV-AyBnODDp5oTx3GhOWASuq1uTsUjYCAk6pjHmrNU" />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+          </div>
+          <!-- Floating Stat Card -->
+          <div
+            class="absolute -bottom-10 -left-10 bg-white/90 backdrop-blur-xl p-8 rounded-xl shadow-2xl max-w-[240px] border border-outline-variant/10">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-4" data-weight="fill">verified_user</span>
+            <h4 class="text-2xl font-bold text-primary mb-1">99.9%</h4>
+            <p class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Supply Reliability Rate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Abstract Background Shape -->
+    <div
+      class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low -z-0 rounded-l-[100px] transform translate-x-20">
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5">
+          <h2 class="font-headline text-3xl font-bold text-primary mb-6">The Standard of Medical Integrity</h2>
+          <p class="text-on-surface-variant leading-loose mb-8">
+            J&amp;T Health Essentials Limited stands at the intersection of medical innovation and logistical
+            excellence. For over two decades, we have been the silent backbone of healthcare providers, ensuring that
+            life-saving pharmaceuticals and precision medical devices are always where they are needed most.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-surface-container-low transition-colors">
+              <span class="material-symbols-outlined text-secondary mt-1">biotech</span>
+              <div>
+                <h4 class="font-bold text-primary">Certified Quality</h4>
+                <p class="text-sm text-on-surface-variant">Strict adherence to ISO 13485 and global supply chain
+                  standards.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-surface-container-low transition-colors">
+              <span class="material-symbols-outlined text-secondary mt-1">public</span>
+              <div>
+                <h4 class="font-bold text-primary">Global Network</h4>
+                <p class="text-sm text-on-surface-variant">Strategic partnerships with top-tier global pharmaceutical
+                  manufacturers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-2 gap-6">
+          <div class="pt-12">
+            <div class="rounded-2xl overflow-hidden h-80 shadow-lg">
+              <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                data-alt="professional medical supply technician inspecting temperature controlled storage units in a high-tech pharmacy warehouse"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuACuiRy_af7nb-6qks_i2jnut50b4pJUucj51whSprkiPQosA1RcmMQebSx3mpbvYptplZt455BrHvXBcIpDWM-vLSCCtMgu56QrTWCDsnAvCFmdlJPMi4dTEnu4-6KL_WkVlqblXidQ2QVT7oasbBdZeW8lXxsQeTO9P8VxPVT4GKBakM_4-q2Wg71L9Xs1jUdjjDce5Sk0slTQZuodfo18Jf62JLtzlmc32O-6ALP6oubLR-LuC1rSp3roCrMfYRylMUr2ToxhvU" />
+            </div>
+          </div>
+          <div>
+            <div class="rounded-2xl overflow-hidden h-80 shadow-lg">
+              <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                data-alt="close up of premium orthopedic supports and medical devices arranged on a clean clinical white surface"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqizwAl-_Vsgx93gFThOTqzphg9ppQpycBfUlDjAPyUPlUGozHufJKcp93g6VB1LfwzRErH96RKGLIrZcJ0wfcmaLffpvJ-xAb9QTWs_UU8nZWSNt93lRj4SGucya7tyQn5XkU-jQi8Kt3Rammhx95ruyJCRRUkHwLghv22qSsVPy9jYIPlH_hqxEyN_ECC8csJIRDlQmzIM4VqnTOFV5o_O75ge_cNZV-hDGfqJCYrUoGa_OWetOPZH3Yf8VHsDOwxGqWWmiXnak" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product Categories Bento Grid -->
+  <section class="py-24 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-16 text-center">
+        <h2 class="font-headline text-4xl font-extrabold text-primary mb-4">Product Categories</h2>
+        <div class="h-1 w-20 bg-secondary mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Pharmaceuticals -->
+        <div
+          class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500">
+          <img
+            class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+            data-alt="macro photograph of pharmaceutical capsules and tablets in focused professional medical lighting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV96fG6rNicE_ogU_zMiAeUj-1ac1-XiLAaiVPgqMBmTo6jlKc2_IdeVNuvLEmxeOWnyTPWweo9gIEj3XXr43UXRa2H-tQTD5vIKsgYi5r1giCOtXGO82x6S7dGAQPu_JZOuftSGPO6vXl0JdIL6P6sn1jmYYzhBBUKvJ-92X5sTyDZjmrd1mhAMM4vYAQAF8ep5Fmw94MiXLr0TPEXD9zy94_zeIhDCueqifxjfy-kS9pl_NvpXiWYhQ36ufSHXDZLueqwLtX7C4" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-0 p-8">
+            <h3 class="font-headline text-3xl font-bold text-white mb-2">Pharmaceuticals</h3>
+            <p class="text-white/80 mb-6 max-w-xs">Critical care medications and specialized therapeutic drugs.</p>
+            <button
+              class="px-6 py-2 bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-md hover:bg-white hover:text-primary transition-colors font-bold text-sm">View
+              Catalog</button>
+          </div>
+        </div>
+        <!-- Nutraceuticals -->
+        <div
+          class="md:col-span-2 group relative overflow-hidden rounded-2xl bg-surface-container-lowest h-64 shadow-sm hover:shadow-xl transition-all duration-500">
+          <img
+            class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+            data-alt="assorted health supplements and vitamins in high-end glass packaging on a clean bright background"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWAkwcmvm2r7yZS0hE9ODURwSqwbkKfYQnpj_MkE7JZeYRIAHfsKg43e9HbAK5p16gxLNG-jD-vCb-KdjNnDBcEfXbXWHVPNo-KjhlCky7C0OVLwj7l6n7tNMrEpPF6xjCtDVXUn2TPogfAfM07nUj4bYqaAtJvSwzj3A7n6-EzLRkFFBfWlV0usCX0mM87J1kD0br7goGI5c8rWwDvdcjnOil8hb0SyvX0cGXQXeCbu6SUiLTPMchSmchj-vYZDLA-NG4USyayiM" />
+          <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+          <div class="absolute inset-y-0 left-0 p-8 flex flex-col justify-center">
+            <h3 class="font-headline text-2xl font-bold text-white mb-2">Nutraceuticals</h3>
+            <button
+              class="w-fit px-4 py-1.5 bg-secondary text-white rounded-md font-bold text-xs uppercase tracking-widest mt-2">Explore</button>
+          </div>
+        </div>
+        <!-- Orthopedic -->
+        <div
+          class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest h-64 shadow-sm hover:shadow-xl transition-all duration-500">
+          <div class="absolute inset-0 bg-primary-container"></div>
+          <div class="absolute inset-0 p-8 flex flex-col justify-end">
+            <span class="material-symbols-outlined text-secondary-container text-4xl mb-4">orthopedics</span>
+            <h3 class="font-headline text-xl font-bold text-white">Orthopedic</h3>
+            <p class="text-on-primary-container text-sm mt-2">Support &amp; Rehab</p>
+          </div>
+        </div>
+        <!-- Medical Devices -->
+        <div
+          class="group relative overflow-hidden rounded-2xl bg-surface-container-lowest h-64 shadow-sm hover:shadow-xl transition-all duration-500">
+          <div class="absolute inset-0 bg-white"></div>
+          <img class="absolute inset-0 w-full h-full object-cover opacity-20"
+            data-alt="modern digital medical monitor showing health vitals in a sleek dark environment"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC5AjOqGVstLmsPxAqYkjwnaoIavohqrHF9ICp-ZqcJ5B-O4Kf1W21rxqj7-_HUQAjgcYHXDSj0yCT-10qZyIjuL0gmSr4G3332nE7einigdcNBWEAqKZvepryAQGe_uUQmRy4MB33CmqtdDk8EsLb4b8SST2MBeF1yVMiBxXbHY6codod_H7mjurAzo70niEbOwrbGYJo7eEgYLUKWP2VmR9Jhn2P8CwNcc5nV_gSvIl44pObqpHGs61zDMNu-cqMTpdjnS4NOE8" />
+          <div class="absolute inset-0 p-8 flex flex-col justify-end">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">monitoring</span>
+            <h3 class="font-headline text-xl font-bold text-primary">Medical Devices</h3>
+            <p class="text-on-surface-variant text-sm mt-2">Diagnostic Tools</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us -->
+  <section class="py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row gap-12 items-end mb-16">
+        <div class="flex-1">
+          <h2 class="font-headline text-4xl font-extrabold text-primary mb-6 leading-tight">Engineered for Clinical
+            Trust</h2>
+          <p class="text-lg text-on-surface-variant">We don't just supply products; we provide a foundation of
+            reliability for healthcare professionals.</p>
+        </div>
+        <div class="flex gap-4">
+          <div
+            class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-outline cursor-pointer hover:bg-primary hover:text-white transition-all">
+            <span class="material-symbols-outlined">chevron_left</span>
+          </div>
+          <div
+            class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-outline cursor-pointer hover:bg-primary hover:text-white transition-all">
+            <span class="material-symbols-outlined">chevron_right</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="p-10 rounded-2xl bg-surface-container-lowest border border-outline-variant/5 shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+          <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-8">
+            <span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span>
+          </div>
+          <h4 class="text-xl font-bold text-primary mb-4">Precision Sourcing</h4>
+          <p class="text-on-surface-variant leading-relaxed">Rigorous vetting process for every manufacturer and product
+            line in our catalog.</p>
+        </div>
+        <div
+          class="p-10 rounded-2xl bg-surface-container-lowest border border-outline-variant/5 shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+          <div class="w-14 h-14 rounded-xl bg-secondary/5 flex items-center justify-center mb-8">
+            <span class="material-symbols-outlined text-secondary text-3xl">thermostat</span>
+          </div>
+          <h4 class="text-xl font-bold text-primary mb-4">Cold-Chain Excellence</h4>
+          <p class="text-on-surface-variant leading-relaxed">State-of-the-art temperature monitoring for all sensitive
+            pharmaceutical shipments.</p>
+        </div>
+        <div
+          class="p-10 rounded-2xl bg-surface-container-lowest border border-outline-variant/5 shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+          <div class="w-14 h-14 rounded-xl bg-tertiary-container/5 flex items-center justify-center mb-8">
+            <span class="material-symbols-outlined text-on-tertiary-container text-3xl">support_agent</span>
+          </div>
+          <h4 class="text-xl font-bold text-primary mb-4">24/7 Clinical Support</h4>
+          <p class="text-on-surface-variant leading-relaxed">Dedicated logistics experts available around the clock for
+            urgent medical needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partners & Clients -->
+  <section class="py-20 border-y border-outline-variant/10 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-center font-label text-xs font-bold text-outline tracking-[0.2em] uppercase mb-12">Trusted by
+        Global Institutions</p>
+      <div
+        class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+        <img class="h-10 md:h-12 w-auto" data-alt="logo of a world class research hospital in simple blue monochrome"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRiwih6NtFuwGrQSdSipaPteZ6GZU9Ri54FiD3zxNFxpV7YN_SkTvgeuidajYNFASE_RLmXdM47-4YjCiAZbPIKmTAl8J41O07gvG3qXnqdhQ15ZrygLAkVWx5-HTdU6_KKztaBHoy8XFsnOWBA7JgFyo9nsr9pCDPlhyoir-zBEsNeJO2G-nOhuL9CE4rYTgTfoXJfRyOjxQO7VMGrgQn_LAVrm-W0aisuZW6Tfd2d782flQcshEX7ZCqTAakpOjGF_cUzMFFSvc" />
+        <img class="h-10 md:h-12 w-auto"
+          data-alt="logo of a leading pharmaceutical laboratory in simple blue monochrome"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPjYbXZBGDxfZB73WjYi9HTODkX3VqaqMX8SlCwhe8aVxHSvwIJE4uLo2i1NhIp_nJcnKqrcuORnO8U0y-5YzUg4v36i5pbczGe16RdEdtw8SQYyMBDcbq22Gf8vwD8HGTUd4RnV03WkxZZZmvxnF67zZ9IjpoEg4jtg9LdSwue9zL99NyzMMHIy7X8sWLSBbxmeeKgUfg3h3VYGrAMycxh4YC7dGreZ4DdPNsBzUzWfXDNSA5Lb3pxGT79MyOF6jd3DrC3_kt3CA" />
+        <img class="h-10 md:h-12 w-auto" data-alt="logo of a national healthcare ministry in simple blue monochrome"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_vBG-s9gXMZzMMt0gSvNVNiDCVAyGCTIfRC8V2saQqKeXOCHWRc1cNSZ2VrByYOIyROwO-0E4ogc0AEi4Oeg55d93hPKNwQCBHt7g85eGyad8hn2PkgJk8PEY81ecJznk87qBvYG7etSBbEQWbwmoqxMJf_dkOqMZmg32fGUDaxzIR5F4Ve36Lgo4P1WqLgL8QWLpfSh-nmAizgQTUEY5ZnLx_LbWhBN8oOZHViTeIQBq5PWNZB-mqiRlrf5hXtJbtc270LaCj-A" />
+        <img class="h-10 md:h-12 w-auto" data-alt="logo of a specialty surgery clinic in simple blue monochrome"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa5t6nPAEySmWvCrjsVpgjSU-ymDq_tugFDmoEXx3FGHXpWEcYriI761IhcSgzT40fwAwgwplB9bs_auFQ7QB1Lq91WpZdOukN3Sdlg9Ul8Ak4mn8DReWgyoFWP9Ff7QAdMEuVLbnrZ4XNOBtrWM9k4fS4_rGAY3H5-BanToOiNm1zgG8a7gIMG98sBuRkTipGS0rFxw3_owMEWtuK-wdF6aEL6PZB-8Uc838-SgQr4hDkE4UtZ7en-WLa-LPt8TAZkOYK3Dc7Doc" />
+        <img class="h-10 md:h-12 w-auto"
+          data-alt="logo of a global healthcare logistics provider in simple blue monochrome"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKgfX4xJXu19mC_rQgfcAIdluYX680tojaqN9rK70cyEhmmJoA4GTfKjl50XlyKjAwSgekJLJ899HJvm5meC34DnY9XkWaxU2w8ZEbVFQrMuT_7oDSO1E9BVWUqo3w8T8BLKyd04bNEC2HJkXQYn8DI1ps5yxwBQ4bstbzt7yxrfF2o7myTA6MnftpZWe-_AXXWb5JngGzYJ1TW7ySwpUKGgbvpfD1SWyjDjMVHG20X2VzX7hZMD_eEnMdkXclJy2A-FyTS4k-BTQ" />
+      </div>
+    </div>
+  </section>
+  <!-- Contact & CTA -->
+  <section class="py-24 bg-primary text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <h2 class="font-headline text-4xl font-extrabold mb-6">Ready to Optimize Your Medical Supply Chain?</h2>
+      <p class="text-xl text-primary-fixed-dim mb-10 leading-relaxed">Connect with our healthcare specialists today for
+        a personalized quote or consultation.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button
+          class="px-10 py-4 bg-secondary text-white font-bold rounded-md hover:shadow-[0_0_30px_-5px_rgba(0,100,148,0.5)] transition-all">Request
+          a Quote</button>
+        <button class="px-10 py-4 border border-white/30 hover:bg-white/10 font-bold rounded-md transition-all">Contact
+          Sales</button>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200 dark:border-slate-800">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6 py-12 font-body text-sm leading-relaxed">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2 mb-6"><img alt="J&amp;T Health Essentials Logo"
+            class="h-10 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/ADBb0uh8qUoN1dQcHEa5bnyG70YbFKRFs9_B43m25u8kbk2j3Jn4qWxfmC_1q5zgL7foagRclmF8kVr_J8g7LgkBtEyE30PiRJsIuYKfz0RTV5mecIMxKpQKw6jMj6FBD9GcK5-ZkfUZ-En5M1FTRHSMMKXyiEdwoUIVkO7sOI1RaVfFOiLSSH2ZQbz_ACIN16v-kh1h2rKxzpcQpG62AYX9HWguLLMmOjM4rR_KyRnit-zPfEvPdeOMUneCFYn1dBtefbkl4OqpENI2Lg" />
+        </div>
+        <p class="text-slate-500 dark:text-slate-400 mb-6">Delivering precision healthcare logistics and premium medical
+          supplies globally.</p>
+        <div class="flex gap-4">
+          <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-600">public</span>
+          <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-600">mail</span>
+          <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-blue-600">call</span>
+        </div>
+      </div>
+      <div>
+        <h5 class="font-bold text-blue-900 dark:text-blue-400 mb-6">Our Services</h5>
+        <ul class="space-y-4">
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Pharmaceutical Distribution</a></li>
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Medical Device Sourcing</a></li>
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Supply Chain Management</a></li>
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Cold-Chain Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-blue-900 dark:text-blue-400 mb-6">Quick Links</h5>
+        <ul class="space-y-4">
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Privacy Policy</a></li>
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Terms of Service</a></li>
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Supply Chain Standards</a></li>
+          <li><a
+              class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+              href="#">Global Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-blue-900 dark:text-blue-400 mb-6">Office Locations</h5>
+        <p class="text-slate-500 dark:text-slate-400 mb-4">
+          <strong class="text-on-surface">Global HQ:</strong><br />
+          124 Clinical Parkway, Suite 500<br />
+          Medical District, London
+        </p>
+        <p class="text-slate-500 dark:text-slate-400">
+          <strong class="text-on-surface">Regional Hub:</strong><br />
+          88 Logistic Way, Singapore
+        </p>
+      </div>
+    </div>
+    <div class="border-t border-slate-200 dark:border-slate-800 py-8">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-500 dark:text-slate-400 text-xs">© 2024 J&amp;T Health Essentials Limited. All rights
+          reserved.</p>
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+          <span class="text-xs font-medium text-slate-500">System Status: Operational</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | J&amp;T Health Essentials</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#4da498",
+              "on-secondary-fixed": "#001e30",
+              "on-primary-container": "#7796d1",
+              "background": "#f7f9fc",
+              "tertiary-container": "#00352f",
+              "outline-variant": "#c4c6d1",
+              "error-container": "#ffdad6",
+              "on-background": "#191c1e",
+              "tertiary": "#001e1a",
+              "surface-container-low": "#f2f4f7",
+              "on-secondary-container": "#00547d",
+              "surface-tint": "#3e5e95",
+              "primary": "#00193c",
+              "secondary": "#006494",
+              "surface": "#f7f9fc",
+              "on-secondary": "#ffffff",
+              "on-surface": "#191c1e",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed": "#00201c",
+              "secondary-fixed": "#cbe6ff",
+              "on-primary-fixed": "#001b3f",
+              "tertiary-fixed": "#9cf2e5",
+              "inverse-primary": "#abc7ff",
+              "outline": "#747781",
+              "secondary-container": "#83c8fd",
+              "surface-container": "#eceef1",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#004b71",
+              "on-surface-variant": "#43474f",
+              "surface-container-highest": "#e0e3e6",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#8ecdff",
+              "on-tertiary-fixed-variant": "#005048",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "primary-fixed-dim": "#abc7ff",
+              "surface-variant": "#e0e3e6",
+              "on-error": "#ffffff",
+              "primary-container": "#002d62",
+              "surface-container-high": "#e6e8eb",
+              "surface-dim": "#d8dadd",
+              "inverse-surface": "#2d3133",
+              "tertiary-fixed-dim": "#80d6c9",
+              "on-primary-fixed-variant": "#24467c",
+              "inverse-on-surface": "#eff1f4",
+              "surface-bright": "#f7f9fc",
+              "primary-fixed": "#d7e2ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-header {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 glass-header shadow-sm dark:shadow-none h-20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<div class="flex items-center gap-8">
+<a href="index.html">
+<img alt="J&amp;T Health Essentials Logo" class="h-10 w-auto object-contain" src="./favicon.svg"/>
+</a>
+<div class="hidden md:flex items-center gap-6 font-headline font-semibold tracking-tight">
+<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-700 dark:border-blue-300 pb-1" href="./products.html">Products</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="./solution.html">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="./about.html">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-white transition-colors" href="./contact.html">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-xl transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined text-outline text-lg" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-body px-2 w-48" placeholder="Search products..." type="text"/>
+</div>
+<button class="hidden sm:block px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-lg font-headline font-semibold text-sm transition-transform scale-95 active:opacity-80">
+                    Request Quote
+                </button>
+<button class="p-2 text-slate-600 hover:bg-slate-50 rounded-lg transition-all">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Page Header -->
+<header class="py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-3xl">
+<nav class="flex items-center gap-2 text-sm font-label mb-4 text-on-surface-variant">
+<span>Home</span>
+<span class="material-symbols-outlined text-xs" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary font-bold">Products</span>
+</nav>
+<h1 class="font-headline font-bold text-5xl text-primary tracking-tight mb-6">Medical &amp; Healthcare Solutions</h1>
+<p class="text-body text-lg text-on-surface-variant leading-relaxed">
+                        Precision-sourced pharmaceutical products and clinical equipment designed to uphold the highest standards of global health logistics and patient care.
+                    </p>
+</div>
+</div>
+</header>
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Filter Sidebar -->
+<aside class="w-full lg:w-72 shrink-0 space-y-8">
+<div>
+<h3 class="font-headline font-bold text-primary text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-xl" data-icon="filter_list">filter_list</span>
+                            Filter Catalog
+                        </h3>
+<div class="h-1 bg-primary/10 w-12 rounded-full mb-8"></div>
+</div>
+<!-- Category Filter -->
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Category</span>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Pharmaceutical Products</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input checked="" class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Nutraceuticals</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Orthopedic Supplies</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Medical Devices</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Skincare Products</span>
+</label>
+</div>
+</div>
+<!-- Brand Filter -->
+<div class="space-y-4 pt-4">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Suppliers &amp; Brands</span>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Global Clinicals</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all cursor-pointer group">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface group-hover:text-primary transition-colors">Elite Ortho</span>
+</label>
+</div>
+</div>
+<button class="w-full py-4 text-primary font-bold text-sm bg-primary/5 hover:bg-primary/10 rounded-xl transition-all flex items-center justify-center gap-2">
+                        Clear All Filters
+                    </button>
+</aside>
+<!-- Product Grid Content -->
+<div class="flex-1">
+<!-- Grid Toolbar -->
+<div class="flex flex-col sm:flex-row justify-between items-center mb-10 pb-6 border-b border-outline-variant/15">
+<p class="text-on-surface-variant text-sm font-medium mb-4 sm:mb-0">Showing <span class="text-primary font-bold">1-12</span> of 48 results</p>
+<div class="flex items-center gap-4">
+<span class="text-sm text-on-surface-variant font-medium">Sort by:</span>
+<select class="bg-surface-container-lowest border-outline-variant/30 rounded-lg text-sm font-medium focus:ring-primary px-4 py-2 pr-10">
+<option>Most Relevant</option>
+<option>Newest Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="relative aspect-square overflow-hidden bg-white">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="close-up of professional pharmaceutical pill bottles and capsules on a clinical white surface with bright studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACd85LrafFa14E61DpTWfZEmyS2fIHdLAiXvUsX3sP56-bOzpAaogekSR21qMsCgA_6ULX5Ou0jBwKA2EZ4REjRHJ4f8LwOF8-No_QUokGQ9KP0FvletEZ50U-vedQtSwSTx0ti8j0oQ4Sy5Ue0cC4cYYADh-teMh7nXAXfwmcvFnTMFAhuWyTtTeX7OhiNqM5X5duUajCCl4GVCVDbsWnrZL6e7spQRxoCVBJvvWHxdQQyS8sphEwoy83HjfyQFCLnB2A0aUSCHw"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-wider rounded-sm">Essential</span>
+</div>
+</div>
+<div class="p-6">
+<p class="text-xs font-bold text-secondary tracking-widest uppercase mb-2">Pharmaceutical</p>
+<h3 class="font-headline font-bold text-primary text-xl mb-4 leading-tight group-hover:text-secondary transition-colors">Clydin-V Clinical Capsule</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+<span>In Stock: 500+ Units</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all active:scale-95">Enquire Now</button>
+<button class="p-3 bg-surface-container-high text-primary rounded-lg transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="relative aspect-square overflow-hidden bg-white">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="digital stethoscope laying on a clean medical desk in a well lit modern doctor office clinical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdQxyXN5BIXOn3MbyvX0Uf_VwkA89XrLGyI_ufELDTdyZBIO610dCSneNjUsDJzfOdWqm0syUTB7mOcWwrU_QsRQP-fk57c63UhScFJR6FdGs__md2ZWfOh-UL8ePfGDNkXsiuPr3sdhwwyV8_0H-XguS6fo-pJjfh9wcvrzRJI0mLic8c9m8d3NFHLgZhDSMi8Yj5T_xm7GNzVRlsVy4IxHjQKw1fOAmBc6ixr2uTmj-GU_fkMjwebNSyxv8de5QqcNjGPUu-4c"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-on-tertiary-container text-white text-[10px] font-bold uppercase tracking-wider rounded-sm">New Arrival</span>
+</div>
+</div>
+<div class="p-6">
+<p class="text-xs font-bold text-secondary tracking-widest uppercase mb-2">Medical Devices</p>
+<h3 class="font-headline font-bold text-primary text-xl mb-4 leading-tight group-hover:text-secondary transition-colors">Precision-Scan Digital Stethoscope</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+<span>Limited Availability</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all active:scale-95">Enquire Now</button>
+<button class="p-3 bg-surface-container-high text-primary rounded-lg transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="relative aspect-square overflow-hidden bg-white">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="various clean white pill bottles and medical supplies on a soft light blue background with aesthetic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnx6DuWFz8ujr1OwG1q_k00lKzJI8nx51_IoGd3Pj_oUXRhe_D2iZtIPKHgE_JbKSIBD44P6w-tCiWM_Qbnf1b1Q6R_dEwiX1DVppEjrXIQFa7dZvjvv_hbzX1dtuTHliHJpJ05rA3nUjRiLmxCiG-EkOKMM7QAIVm6e9K3q0ZtYEr9HfGmaC2vzjJWW_RSzd5kSK3UtTvCy6UsXdV9ExO3yVafNpafoOvG6GHiwVewbl9SJR-8FJtbPTpwbbbRipHxGTBaM-IAuk"/>
+</div>
+<div class="p-6">
+<p class="text-xs font-bold text-secondary tracking-widest uppercase mb-2">Nutraceuticals</p>
+<h3 class="font-headline font-bold text-primary text-xl mb-4 leading-tight group-hover:text-secondary transition-colors">Pro-Immune Multi-Vitamin Pack</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+<span>In Stock: Bulk Available</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all active:scale-95">Enquire Now</button>
+<button class="p-3 bg-surface-container-high text-primary rounded-lg transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="relative aspect-square overflow-hidden bg-white">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="professional orthopedic knee brace or medical support equipment displayed on a clean medical studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3rD3JeV1i3-Blczh2g-np_rRCh-l2MW70eZoykxBMGqe6wc3G6AfxydmcDtBSMGnpbTdu95nrtr_ah1M7oqiCGSTRdkucP7umBuAQai0yAxDXiRpibfsUsI0lNp_eE7eeCACm81amnuS_STNsvOg1WHn-7W-PWXe4mqHeI8BoC4eQyghkQdEk657aQ0MFOuYG7SHcuhdqxIqrlXG5d1bLZnjdNAJM3pHkk-hWUWARxwf3Xyvxef5IDOtFOC3omQqhxmMuWoFLfo4"/>
+</div>
+<div class="p-6">
+<p class="text-xs font-bold text-secondary tracking-widest uppercase mb-2">Orthopedic</p>
+<h3 class="font-headline font-bold text-primary text-xl mb-4 leading-tight group-hover:text-secondary transition-colors">Elite-Guard Knee Support</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+<span>Standard Sizes in Stock</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all active:scale-95">Enquire Now</button>
+<button class="p-3 bg-surface-container-high text-primary rounded-lg transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="relative aspect-square overflow-hidden bg-white">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="luxury medical grade skincare product in a minimalist glass bottle on a clean white countertop with soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4qso7K40ifju_HBpdISc7NhdXvIUg56iWo9itA3ye2CIAC5A_PCRc1JArzLqew5Hps4GAHtQfZAAukaNC2xoAapbyNieCS6r5tmGwBfOlv-cCceXnwEy2sjjOoGWO7qpNnDikzBSFrQsd5c-UMZUKVBEYT_szx84x0uPl6HbgHbmA1He73PwSSzAvJ6YGfaifOkF_XkcaHOarhQLWf0j2ZYg5pxBgbUE_eie6Y_WgeRR9l37LqzDf3K3ipjNJWJ3rgBDrPVfjOzE"/>
+</div>
+<div class="p-6">
+<p class="text-xs font-bold text-secondary tracking-widest uppercase mb-2">Skincare</p>
+<h3 class="font-headline font-bold text-primary text-xl mb-4 leading-tight group-hover:text-secondary transition-colors">Dermo-Repair Intensive Serum</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+<span>Specialist Supply</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all active:scale-95">Enquire Now</button>
+<button class="p-3 bg-surface-container-high text-primary rounded-lg transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="relative aspect-square overflow-hidden bg-white">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="fully stocked professional first aid medical kit with open bandages and emergency supplies on a sterile surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-yIzEBVaDeGYkA5PXLR-C61LZ4tpac8rFKxS14HAsCzujajYzbMvp-0EdUF3J7YIoz-Toed_-54j39UPgMGcGd18yaGa9Y5U_RGwbhmLGDPWx8cOs-hEiKY2RxBqwNLrCLftj0xKwoo86U1_pXZGYerFaZ6xar1pRA_VX86XArsLBf9aggYub4qgvfw-0q9mt3GJ1WtjlEFLDrKhbeGzAZ2mLo8YsnPnh2juQy6SrqQ5df2lZDYNTsW5ad4vZQ-wL-tRmxnsH8h8"/>
+</div>
+<div class="p-6">
+<p class="text-xs font-bold text-secondary tracking-widest uppercase mb-2">First Aid</p>
+<h3 class="font-headline font-bold text-primary text-xl mb-4 leading-tight group-hover:text-secondary transition-colors">Rapid-Response Trauma Kit</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+<span>Bulk Orders Available</span>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-3 bg-primary text-on-primary rounded-lg text-sm font-bold transition-all active:scale-95">Enquire Now</button>
+<button class="p-3 bg-surface-container-high text-primary rounded-lg transition-all hover:bg-surface-container-highest">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-outline-variant/30 text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container transition-all">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container transition-all">3</button>
+<span class="px-2 text-on-surface-variant">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container transition-all">8</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-outline-variant/30 text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6 py-12">
+<div class="space-y-4">
+<img alt="J&amp;T Health Essentials Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uh8qUoN1dQcHEa5bnyG70YbFKRFs9_B43m25u8kbk2j3Jn4qWxfmC_1q5zgL7foagRclmF8kVr_J8g7LgkBtEyE30PiRJsIuYKfz0RTV5mecIMxKpQKw6jMj6FBD9GcK5-ZkfUZ-En5M1FTRHSMMKXyiEdwoUIVkO7sOI1RaVfFOiLSSH2ZQbz_ACIN16v-kh1h2rKxzpcQpG62AYX9HWguLLMmOjM4rR_KyRnit-zPfEvPdeOMUneCFYn1dBtefbkl4OqpENI2Lg"/>
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm leading-relaxed">
+                    Advancing global healthcare through precise logistics and ethical pharmaceutical distribution.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-blue-900 cursor-pointer hover:opacity-70" data-icon="public">public</span>
+<span class="material-symbols-outlined text-blue-900 cursor-pointer hover:opacity-70" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-blue-900 cursor-pointer hover:opacity-70" data-icon="call">call</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-900 dark:text-blue-400 mb-6 uppercase text-xs tracking-widest">Resources</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-900 dark:text-blue-400 mb-6 uppercase text-xs tracking-widest">Supply Chain</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Supply Chain Standards</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Global Logistics</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-900 dark:text-blue-400 mb-6 uppercase text-xs tracking-widest">Newsletter</h4>
+<div class="relative">
+<input class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg py-2 px-4 text-sm focus:ring-2 focus:ring-blue-500" placeholder="Email Address" type="email"/>
+<button class="absolute right-2 top-1.5 text-blue-900">
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 py-8 border-t border-slate-100 dark:border-slate-900">
+<p class="text-slate-500 dark:text-slate-400 text-sm text-center">© 2024 J&amp;T Health Essentials Limited. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
